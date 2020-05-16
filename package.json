@@ -1,0 +1,25 @@
+{
+  "name": "budgety",
+  "version": "1.0.0",
+  "description": "buget calculating app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darshnabshosahalli/budgety.git"
+  },
+  "keywords": [
+    "finance"
+  ],
+  "author": "darshan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darshnabshosahalli/budgety/issues"
+  },
+  "homepage": "https://github.com/darshnabshosahalli/budgety#readme",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
