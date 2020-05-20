@@ -1,0 +1,36 @@
+.budget-list {
+    &:first-child {
+        border-top: .5px solid #e7e7e7;
+        margin-top: 1.2rem;
+    }
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #555;
+
+    & > * {
+        @include income-expense;
+        margin-bottom: 0;
+        border-bottom: .5px solid #e7e7e7;
+    }
+
+    &__value {
+        display: flex;
+
+        & > * {
+            align-items: center;
+        }
+    } 
+
+    @media(hover:hover) {
+        & > li .delete-button {
+            display: none;
+            margin-left: 0;
+        }
+
+        & > li:hover .delete-button {
+            display: inline;
+            margin-left: 2rem;
+        } 
+    }
+}

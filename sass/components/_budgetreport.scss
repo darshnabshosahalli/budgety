@@ -1,0 +1,23 @@
+.budget-report {
+
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    @include respond(tablet-land) {
+        width: 75vw;
+        margin: 4rem auto 0 auto;
+    }
+
+    &__income {
+        color: $income-color;
+        padding: 1rem;
+
+    }
+
+    &__expense {
+        color: $expense-color;
+        padding: 1rem;
+    }
+
+}

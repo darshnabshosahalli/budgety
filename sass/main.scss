@@ -1,16 +1,24 @@
 // abstract imports
-@Import "abstract/functions";
-@Import "abstract/mixins";
-@Import "abstract/variables";
+@import "abstract/functions";
+@import "abstract/mixins";
+@import "abstract/variables";
 
 // base imports
-@Import "base/animation";
-@Import "base/base";
-@Import "base/typography";
-@Import "base/utility";
+@import "base/animation";
+@import "base/base";
+@import "base/typography";
+@import "base/utility";
 
 // layout imports
-@Import "layout/layout";
+@import "layout/layout";
 
 // page imports
-@Import "page/index";
+@import "page/index";
+
+// components imports
+@import "components/budget";
+@import "components/percent";
+@import "components/save";
+@import "components/budgetreport";
+@import "components/budget-list";
+@import "components/delete-button";

@@ -1,0 +1,36 @@
+.income {
+    color: $income-color;
+}
+.expense {
+    color: $expense-color;
+}
+.inverse {
+    background-color: rgba($expense-color,0.2) !important;
+    margin-left: .5rem;
+}
+.income-border {
+   border:  1px solid $income-color;
+}
+.expense-border {
+    border:  1px solid $expense-color;
+}
+.income-focus {
+
+    border: 2px solid $income-color;
+    & > svg {
+        stroke: $income-color;
+    }
+}
+.expense-focus {
+
+    border: 2px solid $expense-color;
+    & > svg {
+        stroke: $expense-color;
+    }
+}
+.income-focus:focus {
+    border: 2px solid $income-color;
+}
+.expense-focus:focus {
+    border: 2px solid $expense-color;
+}

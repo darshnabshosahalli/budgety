@@ -1,0 +1,40 @@
+.header {
+    padding: 2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../img/back.png') center/cover no-repeat;
+}
+.budget-input {
+    display: flex;
+    justify-content: center;
+    height: 6.5rem;
+    align-items: center;
+    background-color: $lightgrey;
+    border: 1px solid $lightgrey1;
+
+    &__options {
+        @include input(6rem);
+    }
+
+    &__description > *{
+        @include input(24rem);
+
+        @include respond(tablet-port) {
+            @include input(30rem);
+        }
+
+        @include respond(tablet-land) {
+            @include input(35rem);
+        }
+
+        @include respond(desktop) {
+            @include input(40rem);
+        }
+
+        @include respond(big-screen) {
+            @include input(45rem);
+        }
+    }
+    
+    &__value > *{
+        @include input(8rem);
+    }
+}

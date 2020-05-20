@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/style.min.css">
+        
+        <title>Budgety</title>
+    </head>
+    <body>
+        <div class="header">
+            <div class="budget">
+                    Available Budget in 
+                <span class="budget__date">
+                    May 2020
+                </span>
+                <div class="budget__summary">
+                    <span id="money-status" class="money__status">
+                        
+                    </span>
+                    <span id="money-value" class="money__value">
+                        
+                    </span>
+                </div>
+                <div class="budget__money">
+                    <div class="budget__money--income">
+                        <span>Income</span>
+                        <div class="budget__value">
+                            <span id="total-income"></span>
+                            <span id="income-percent" class="percent"></span>
+                        </div>
+                    </div>
+                    <div class="budget__money--expense">
+                        <span>Expense</span>
+                        <div class="budget__value">
+                            <span id="total-expense"></span>
+                            <span id="expense-percent" class="percent"></span>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="budget-input">
+            <select id="select-value" name="input" class="budget-input__options income-focus">
+                <option value="inc" selected>+</option>
+                <option value="exp">-</option>
+            </select>
+            <div class="budget-input__description">
+                <input class="income-focus" id="input-desc" type="text" placeholder="Add Description">
+            </div>
+            <div class="budget-input__value">
+                <input class="income-focus" id="input-value" type="number" placeholder="value">
+            </div>
+            <button id="add-button" class="save income-focus">
+                <svg xmlns='http://www.w3.org/2000/svg' width='2.5rem' height='2.5rem' viewBox='0 0 512 512'>
+                    <title>ionicons-v5-e</title>
+                    <polyline points='416 128 192 384 96 288' style='fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:3.6rem'/>
+                </svg>
+            </button>
+        </div>
+        <div id="report-list" class="budget-report">
+            <div class="budget-report__income">
+                Income
+                <ul id="income-list" class="budget-list">
+                </ul>
+            </div>
+            <div class="budget-report__expense">
+                Expense
+                <ul id="expense-list" class="budget-list">
+                </ul>
+            </div>
+        </div>
+    </body>
+    <script src="js/custom.min.ofc.js"></script>
+    <script src="js/ux.min.ofc.js"></script>
+</html>

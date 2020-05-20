@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 50%;
+    @include respond(tablet-land) {
+        font-size: 62.5%;
+    }
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a:active,a:link,a:hover,a:visited {
+    color: #eee;
+    border: none;
+}
+
+select[type=text] {
+    padding: 1rem;
+}
